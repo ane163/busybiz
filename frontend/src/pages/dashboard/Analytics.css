@@ -1,0 +1,114 @@
+.analytics-page {
+  min-height: 100vh;
+}
+
+.analytics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.analytics-title {
+  margin: 0;
+}
+
+.analytics-subtitle {
+  margin-top: 6px;
+}
+
+.analytics-section {
+  margin-top: 30px;
+}
+
+.analytics-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.analytics-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.analytics-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+}
+
+.analytics-card-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.analytics-card-value {
+  font-size: 24px;
+}
+
+.analytics-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.analytics-stat-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+}
+
+.analytics-stat-card span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.analytics-stat-card strong {
+  font-size: 26px;
+}
+
+.analytics-table-container {
+  overflow-x: auto;
+}
+
+.analytics-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.analytics-table th,
+.analytics-table td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.analytics-empty {
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.analytics-error {
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}
+
+.analytics-button,
+.analytics-refresh-button {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.analytics-loading {
+  padding: 40px;
+  text-align: center;
+}

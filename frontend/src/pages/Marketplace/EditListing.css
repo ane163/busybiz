@@ -1,0 +1,697 @@
+/* =====================================================
+   BUSYBIZ MARKETPLACE
+   EDIT LISTING
+   BLACK / WHITE / GOLD THEME
+   ===================================================== */
+
+.edit-listing-page {
+  min-height: 100vh;
+  padding: 32px;
+  background: #f5f5f3;
+  color: #111111;
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.edit-listing-header {
+  margin-bottom: 28px;
+}
+
+.edit-back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 22px;
+  padding: 9px 14px;
+
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+
+  background: #ffffff;
+  color: #444444;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.edit-back-button:hover {
+  background: #111111;
+  border-color: #111111;
+  color: #c9a227;
+}
+
+.edit-back-button svg {
+  font-size: 11px;
+}
+
+.edit-listing-header > div:last-child {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.edit-listing-header h1 {
+  margin: 0 0 7px;
+
+  color: #111111;
+
+  font-size: 32px;
+  font-weight: 800;
+
+  letter-spacing: -0.8px;
+}
+
+.edit-listing-header h1::after {
+  content: "";
+
+  display: block;
+
+  width: 48px;
+  height: 3px;
+
+  margin-top: 10px;
+
+  background: #c9a227;
+
+  border-radius: 4px;
+}
+
+.edit-listing-header p {
+  margin: 0;
+
+  color: #777777;
+
+  font-size: 13px;
+}
+
+/* =====================================================
+   MESSAGES
+   ===================================================== */
+
+.edit-listing-error,
+.edit-listing-success {
+  margin-bottom: 22px;
+  padding: 14px 17px;
+
+  border-radius: 6px;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.edit-listing-error {
+  border-left: 4px solid #111111;
+  background: #ffffff;
+  color: #555555;
+}
+
+.edit-listing-success {
+  border-left: 4px solid #c9a227;
+  background: #fffdf3;
+  color: #7d6108;
+}
+
+/* =====================================================
+   FORM
+   ===================================================== */
+
+.edit-listing-form {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* =====================================================
+   FORM SECTION
+   ===================================================== */
+
+.edit-form-section {
+  margin-bottom: 22px;
+  padding: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+
+  box-shadow:
+    0 3px 14px rgba(0, 0, 0, 0.035);
+}
+
+.edit-section-header {
+  margin-bottom: 23px;
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.edit-section-header h2 {
+  margin: 0 0 6px;
+
+  color: #111111;
+
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.edit-section-header p {
+  margin: 0;
+
+  color: #888888;
+
+  font-size: 12px;
+}
+
+/* =====================================================
+   FORM GRID
+   ===================================================== */
+
+.edit-form-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+.edit-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.edit-form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+/* =====================================================
+   LABELS
+   ===================================================== */
+
+.edit-form-group label {
+  color: #333333;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+}
+
+.edit-form-group label span {
+  margin-left: 4px;
+
+  color: #b08a14;
+}
+
+/* =====================================================
+   INPUTS
+   ===================================================== */
+
+.edit-form-group input,
+.edit-form-group textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dcdcdc;
+  border-radius: 7px;
+
+  background: #fafafa;
+  color: #111111;
+
+  font-family: inherit;
+  font-size: 13px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.edit-form-group input {
+  height: 43px;
+  padding: 0 13px;
+}
+
+.edit-form-group textarea {
+  min-height: 130px;
+
+  padding: 13px;
+
+  resize: vertical;
+
+  line-height: 1.6;
+}
+
+.edit-form-group input::placeholder,
+.edit-form-group textarea::placeholder {
+  color: #aaaaaa;
+}
+
+.edit-form-group input:hover,
+.edit-form-group textarea:hover {
+  border-color: #c8c8c8;
+}
+
+.edit-form-group input:focus,
+.edit-form-group textarea:focus {
+  border-color: #c9a227;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 3px rgba(201, 162, 39, 0.10);
+}
+
+/* =====================================================
+   PRICE INPUT
+   ===================================================== */
+
+.price-input {
+  position: relative;
+}
+
+.price-input > span {
+  position: absolute;
+
+  left: 13px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #a17d15;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  pointer-events: none;
+}
+
+.price-input input {
+  padding-left: 29px;
+}
+
+/* =====================================================
+   EXISTING IMAGES
+   ===================================================== */
+
+.edit-existing-images {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 14px;
+
+  margin-bottom: 20px;
+}
+
+.edit-image-card {
+  position: relative;
+
+  height: 150px;
+
+  overflow: hidden;
+
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+
+  background: #eeeeeb;
+}
+
+.edit-image-card img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+.edit-image-card button,
+.edit-new-image button {
+  position: absolute;
+
+  top: 8px;
+  right: 8px;
+
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(17, 17, 17, 0.9);
+
+  color: #ffffff;
+
+  font-size: 11px;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.edit-image-card button:hover,
+.edit-new-image button:hover {
+  background: #c9a227;
+  color: #111111;
+}
+
+/* =====================================================
+   UPLOAD AREA
+   ===================================================== */
+
+.edit-upload-area {
+  min-height: 145px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 25px;
+
+  border: 1.5px dashed #cfcfcf;
+  border-radius: 8px;
+
+  background: #fafafa;
+
+  color: #777777;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.edit-upload-area:hover {
+  border-color: #c9a227;
+
+  background: #fffdf5;
+}
+
+.edit-upload-area > svg {
+  margin-bottom: 4px;
+
+  color: #c9a227;
+
+  font-size: 24px;
+}
+
+.edit-upload-area strong {
+  color: #333333;
+
+  font-size: 13px;
+}
+
+.edit-upload-area span {
+  color: #999999;
+
+  font-size: 11px;
+}
+
+/* =====================================================
+   NEW IMAGES
+   ===================================================== */
+
+.edit-new-images {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 14px;
+
+  margin-top: 18px;
+}
+
+.edit-new-image {
+  position: relative;
+
+  height: 150px;
+
+  overflow: hidden;
+
+  border: 1px solid #d8c071;
+  border-radius: 8px;
+
+  background: #eeeeeb;
+}
+
+.edit-new-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+/* =====================================================
+   ACTIONS
+   ===================================================== */
+
+.edit-listing-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  margin-top: 22px;
+  padding: 20px 0;
+}
+
+.edit-cancel-button,
+.edit-save-button {
+  min-width: 130px;
+  height: 43px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  border-radius: 6px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+/* =====================================================
+   CANCEL
+   ===================================================== */
+
+.edit-cancel-button {
+  border: 1px solid #d5d5d5;
+
+  background: #ffffff;
+
+  color: #555555;
+}
+
+.edit-cancel-button:hover {
+  border-color: #111111;
+
+  background: #111111;
+
+  color: #ffffff;
+}
+
+/* =====================================================
+   SAVE
+   ===================================================== */
+
+.edit-save-button {
+  border: 1px solid #111111;
+
+  background: #111111;
+
+  color: #ffffff;
+}
+
+.edit-save-button:hover {
+  border-color: #c9a227;
+
+  background: #c9a227;
+
+  color: #111111;
+}
+
+.edit-save-button:disabled,
+.edit-cancel-button:disabled {
+  opacity: 0.55;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+/* =====================================================
+   BUTTON SPINNER
+   ===================================================== */
+
+.button-spinner {
+  animation:
+    editButtonSpin
+    0.8s linear infinite;
+}
+
+@keyframes editButtonSpin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =====================================================
+   PAGE LOADING
+   ===================================================== */
+
+.edit-listing-loading {
+  min-height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  color: #777777;
+
+  font-size: 13px;
+}
+
+.edit-loading-spinner {
+  color: #c9a227;
+
+  font-size: 32px;
+
+  animation:
+    editLoadingSpin
+    0.9s linear infinite;
+}
+
+@keyframes editLoadingSpin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 900px) {
+  .edit-listing-page {
+    padding: 25px 20px;
+  }
+
+  .edit-existing-images,
+  .edit-new-images {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 700px) {
+  .edit-listing-page {
+    padding: 20px 15px;
+  }
+
+  .edit-listing-header h1 {
+    font-size: 27px;
+  }
+
+  .edit-form-section {
+    padding: 20px;
+  }
+
+  .edit-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .edit-form-group.full-width {
+    grid-column: auto;
+  }
+
+  .edit-existing-images,
+  .edit-new-images {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .edit-listing-actions {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .edit-cancel-button,
+  .edit-save-button {
+    width: 100%;
+  }
+}
+
+/* =====================================================
+   SMALL MOBILE
+   ===================================================== */
+
+@media (max-width: 420px) {
+  .edit-listing-page {
+    padding: 16px 12px;
+  }
+
+  .edit-back-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .edit-form-section {
+    padding: 16px;
+  }
+
+  .edit-existing-images,
+  .edit-new-images {
+    grid-template-columns: 1fr 1fr;
+    gap: 9px;
+  }
+
+  .edit-image-card,
+  .edit-new-image {
+    height: 125px;
+  }
+}

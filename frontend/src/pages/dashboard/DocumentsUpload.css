@@ -1,0 +1,357 @@
+.documents-upload-page {
+  min-height: 100vh;
+  background: #f7f7f7;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.documents-upload-card {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 35px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.upload-back {
+  border: none;
+  background: transparent;
+  color: #111111;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.upload-back:hover {
+  color: #d4af37;
+}
+
+.upload-back:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.upload-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.upload-heading > span {
+  width: 55px;
+  height: 55px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111111;
+  color: #d4af37;
+  border-radius: 14px;
+  font-size: 25px;
+}
+
+.upload-heading h1 {
+  margin: 0;
+  color: #111111;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.upload-heading p {
+  margin: 6px 0 0;
+  color: #777777;
+  line-height: 1.5;
+}
+
+.upload-error {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: #fff0f0;
+  color: #b42318;
+  border: 1px solid #f0b7b7;
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.upload-error strong {
+  font-size: 14px;
+}
+
+.upload-error span {
+  font-size: 13px;
+}
+
+.upload-success {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #effaf1;
+  color: #18743a;
+  border: 1px solid #b9e4c5;
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.upload-success strong {
+  font-size: 18px;
+}
+
+.upload-field {
+  margin-bottom: 22px;
+}
+
+.upload-field label {
+  display: block;
+  font-weight: 700;
+  color: #222222;
+  margin-bottom: 8px;
+}
+
+.upload-field input,
+.upload-field select,
+.upload-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  padding: 13px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  background: #ffffff;
+  color: #222222;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.upload-field input:focus,
+.upload-field select:focus,
+.upload-field textarea:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.12);
+}
+
+.upload-field input:disabled,
+.upload-field select:disabled,
+.upload-field textarea:disabled {
+  background: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.upload-field textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* =====================================================
+   DROP ZONE
+===================================================== */
+
+.upload-drop-zone {
+  min-height: 210px;
+  border: 2px dashed #d5d5d5;
+  border-radius: 14px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.upload-drop-zone:hover {
+  border-color: #d4af37;
+  background: #fffdf5;
+}
+
+.upload-drop-zone-active {
+  border-color: #d4af37;
+  background: #fffbea;
+  transform: scale(1.01);
+}
+
+.upload-drop-zone-selected {
+  border-style: solid;
+  border-color: #d4af37;
+  background: #fffdf5;
+}
+
+.upload-drop-icon {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.upload-drop-zone h3 {
+  margin: 0;
+  color: #222222;
+  font-size: 17px;
+}
+
+.upload-drop-zone p {
+  margin: 7px 0;
+  color: #777777;
+  font-size: 14px;
+}
+
+.upload-drop-zone small {
+  color: #999999;
+  font-size: 12px;
+}
+
+/* =====================================================
+   SELECTED FILE
+===================================================== */
+
+.selected-file {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+}
+
+.selected-file-icon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111111;
+  color: #d4af37;
+  border-radius: 12px;
+  font-size: 22px;
+}
+
+.selected-file-info {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.selected-file-info strong {
+  color: #222222;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.selected-file-info span {
+  color: #888888;
+  font-size: 12px;
+}
+
+.remove-file-button {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 50%;
+  background: #eeeeee;
+  color: #333333;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.remove-file-button:hover {
+  background: #111111;
+  color: #d4af37;
+}
+
+.remove-file-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* =====================================================
+   SUBMIT
+===================================================== */
+
+.upload-submit {
+  width: 100%;
+  min-height: 50px;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  background: #111111;
+  color: #d4af37;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.upload-submit:hover {
+  background: #222222;
+  transform: translateY(-1px);
+}
+
+.upload-submit:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.upload-button-spinner {
+  display: inline-block;
+  animation: uploadSpin 1s linear infinite;
+}
+
+@keyframes uploadSpin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .documents-upload-page {
+    padding: 20px 12px;
+  }
+
+  .documents-upload-card {
+    padding: 24px 18px;
+    border-radius: 14px;
+  }
+
+  .upload-heading h1 {
+    font-size: 24px;
+  }
+
+  .upload-heading > span {
+    width: 48px;
+    height: 48px;
+  }
+
+  .upload-drop-zone {
+    min-height: 180px;
+  }
+
+}

@@ -1,0 +1,1051 @@
+/* =====================================================
+   MY LISTINGS
+   BUSYBIZ - BLACK / WHITE / GOLD
+===================================================== */
+
+.my-listings-page {
+  min-height: 100vh;
+  padding: 32px 40px 60px;
+
+  background: #f7f7f7;
+
+  color: #111111;
+
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.my-listings-header {
+  max-width: 1400px;
+  margin: 0 auto 35px;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #555555;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+.back-button:hover {
+  color: #c9a227;
+}
+
+.my-listings-title {
+  margin-top: 25px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.title-accent {
+  margin-bottom: 8px;
+
+  color: #c9a227;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.my-listings-title h1 {
+  margin: 0;
+
+  color: #111111;
+
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 800;
+
+  letter-spacing: -1.5px;
+}
+
+.my-listings-title p {
+  margin: 10px 0 0;
+
+  color: #666666;
+
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   CREATE BUTTON
+===================================================== */
+
+.create-listing-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  min-height: 48px;
+
+  padding: 0 22px;
+
+  border: 1px solid #111111;
+  border-radius: 8px;
+
+  background: #111111;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.create-listing-button:hover {
+  background: #c9a227;
+  border-color: #c9a227;
+
+  color: #111111;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(201, 162, 39, 0.2);
+}
+
+/* =====================================================
+   ERROR
+===================================================== */
+
+.my-listings-error {
+  max-width: 1400px;
+  margin: 0 auto 25px;
+
+  padding: 16px 18px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  background: #ffffff;
+
+  border-left: 4px solid #111111;
+  border-radius: 8px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.error-icon {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #111111;
+
+  color: #c9a227;
+}
+
+.my-listings-error strong {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #111111;
+
+  font-size: 14px;
+}
+
+.my-listings-error p {
+  margin: 0;
+
+  color: #666666;
+
+  font-size: 13px;
+}
+
+.my-listings-error > button {
+  margin-left: auto;
+
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 6px;
+
+  background: transparent;
+
+  color: #777777;
+
+  cursor: pointer;
+}
+
+.my-listings-error > button:hover {
+  background: #f2f2f2;
+  color: #111111;
+}
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.empty-listings {
+  max-width: 650px;
+
+  margin: 80px auto;
+
+  padding: 60px 30px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+
+  text-align: center;
+
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.empty-listings-icon {
+  width: 80px;
+  height: 80px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #111111;
+
+  color: #c9a227;
+
+  font-size: 32px;
+}
+
+.empty-accent {
+  margin-bottom: 8px;
+
+  color: #c9a227;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.empty-listings h2 {
+  margin: 0 0 10px;
+
+  color: #111111;
+
+  font-size: 26px;
+}
+
+.empty-listings p {
+  max-width: 450px;
+
+  margin: 0 auto 25px;
+
+  color: #777777;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.empty-listings button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  min-height: 46px;
+
+  padding: 0 20px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #111111;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.empty-listings button:hover {
+  background: #c9a227;
+  color: #111111;
+
+  transform: translateY(-2px);
+}
+
+/* =====================================================
+   LISTINGS CONTAINER
+===================================================== */
+
+.listings-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* =====================================================
+   TOOLBAR
+===================================================== */
+
+.listings-toolbar {
+  margin-bottom: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.listings-count {
+  display: flex;
+  align-items: baseline;
+
+  gap: 9px;
+}
+
+.listings-count span {
+  color: #888888;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+.listings-count strong {
+  color: #111111;
+
+  font-size: 24px;
+}
+
+.listings-count small {
+  color: #777777;
+
+  font-size: 13px;
+}
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.listings-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(285px, 1fr)
+    );
+
+  gap: 24px;
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.listing-card {
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+
+  box-shadow:
+    0 7px 25px rgba(0, 0, 0, 0.05);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.listing-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(201, 162, 39, 0.45);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.09);
+}
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.listing-image-container {
+  position: relative;
+
+  height: 230px;
+
+  overflow: hidden;
+
+  background: #eeeeee;
+}
+
+.listing-image-container img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+.listing-card:hover
+.listing-image-container img {
+  transform: scale(1.04);
+}
+
+.listing-status {
+  position: absolute;
+
+  top: 14px;
+  left: 14px;
+
+  padding: 6px 9px;
+
+  border-radius: 5px;
+
+  background: #111111;
+
+  color: #c9a227;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.listing-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.35);
+
+  opacity: 0;
+
+  transition: opacity 0.25s ease;
+}
+
+.listing-card:hover
+.listing-image-overlay {
+  opacity: 1;
+}
+
+.listing-image-overlay button {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #111111;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.listing-image-overlay button:hover {
+  background: #c9a227;
+}
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.listing-card-content {
+  padding: 22px;
+}
+
+.listing-category {
+  display: inline-block;
+
+  margin-bottom: 8px;
+
+  color: #c9a227;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.2px;
+}
+
+.listing-card-content h2 {
+  margin: 0 0 9px;
+
+  overflow: hidden;
+
+  color: #111111;
+
+  font-size: 19px;
+  font-weight: 750;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.listing-description {
+  min-height: 43px;
+
+  margin: 0 0 18px;
+
+  overflow: hidden;
+
+  color: #777777;
+
+  font-size: 13px;
+  line-height: 1.6;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* =====================================================
+   DETAILS
+===================================================== */
+
+.listing-details {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  margin-bottom: 15px;
+
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.listing-details > div {
+  padding: 14px 0;
+}
+
+.listing-details > div + div {
+  padding-left: 18px;
+
+  border-left: 1px solid #eeeeee;
+}
+
+.listing-details span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #999999;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.listing-details strong {
+  color: #111111;
+
+  font-size: 18px;
+}
+
+/* =====================================================
+   LOCATION
+===================================================== */
+
+.listing-location {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  margin-bottom: 18px;
+
+  color: #777777;
+
+  font-size: 12px;
+}
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.listing-card-actions {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 45px;
+
+  gap: 8px;
+}
+
+.view-button,
+.edit-button,
+.delete-button {
+  min-height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  border-radius: 7px;
+
+  font-family: inherit;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.view-button {
+  border: 1px solid #111111;
+
+  background: #111111;
+
+  color: #ffffff;
+}
+
+.view-button:hover {
+  background: #c9a227;
+  border-color: #c9a227;
+
+  color: #111111;
+}
+
+.edit-button {
+  border: 1px solid #dddddd;
+
+  background: #ffffff;
+
+  color: #111111;
+}
+
+.edit-button:hover {
+  border-color: #c9a227;
+
+  color: #c9a227;
+}
+
+.delete-button {
+  border: 1px solid #e3e3e3;
+
+  background: #ffffff;
+
+  color: #555555;
+}
+
+.delete-button:hover {
+  border-color: #111111;
+
+  background: #111111;
+
+  color: #c9a227;
+}
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.my-listings-loading {
+  min-height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.loading-spinner {
+  color: #c9a227;
+
+  font-size: 30px;
+
+  animation: spin 0.8s linear infinite;
+}
+
+.my-listings-loading p {
+  margin: 0;
+
+  color: #666666;
+
+  font-size: 14px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =====================================================
+   DELETE MODAL
+===================================================== */
+
+.delete-modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.78);
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  animation: overlayIn 0.2s ease;
+}
+
+.delete-modal {
+  position: relative;
+
+  width: 100%;
+  max-width: 440px;
+
+  padding: 38px 32px 30px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(201, 162, 39, 0.3);
+
+  border-radius: 16px;
+
+  text-align: center;
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.35);
+
+  animation: modalIn 0.25s ease;
+}
+
+/* =====================================================
+   MODAL CLOSE
+===================================================== */
+
+.delete-modal-close {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 6px;
+
+  background: transparent;
+
+  color: #888888;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.delete-modal-close:hover {
+  background: #f2f2f2;
+
+  color: #111111;
+}
+
+/* =====================================================
+   MODAL ICON
+===================================================== */
+
+.delete-modal-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #111111;
+
+  color: #c9a227;
+
+  font-size: 24px;
+}
+
+.delete-modal-accent {
+  margin-bottom: 7px;
+
+  color: #c9a227;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.delete-modal h2 {
+  margin: 0 0 10px;
+
+  color: #111111;
+
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.delete-modal p {
+  max-width: 350px;
+
+  margin: 0 auto 8px;
+
+  color: #666666;
+
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.delete-modal-warning {
+  display: block;
+
+  margin-bottom: 26px;
+
+  color: #999999;
+
+  font-size: 12px;
+}
+
+/* =====================================================
+   MODAL ACTIONS
+===================================================== */
+
+.delete-modal-actions {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+}
+
+.cancel-delete-button,
+.confirm-delete-button {
+  min-height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  border-radius: 8px;
+
+  font-family: inherit;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.cancel-delete-button {
+  border: 1px solid #dddddd;
+
+  background: #ffffff;
+
+  color: #333333;
+}
+
+.cancel-delete-button:hover:not(:disabled) {
+  border-color: #aaaaaa;
+
+  background: #f5f5f5;
+}
+
+.confirm-delete-button {
+  border: 1px solid #111111;
+
+  background: #111111;
+
+  color: #ffffff;
+}
+
+.confirm-delete-button:hover:not(:disabled) {
+  border-color: #c9a227;
+
+  background: #c9a227;
+
+  color: #111111;
+}
+
+.cancel-delete-button:disabled,
+.confirm-delete-button:disabled {
+  opacity: 0.55;
+
+  cursor: not-allowed;
+}
+
+.delete-spinner {
+  animation: spin 0.8s linear infinite;
+}
+
+/* =====================================================
+   MODAL ANIMATIONS
+===================================================== */
+
+@keyframes overlayIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(15px)
+      scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+  .my-listings-page {
+    padding: 25px 22px 50px;
+  }
+
+  .my-listings-title {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .create-listing-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .my-listings-page {
+    padding: 20px 15px 40px;
+  }
+
+  .my-listings-title h1 {
+    font-size: 32px;
+  }
+
+  .listings-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .listing-image-container {
+    height: 240px;
+  }
+
+  .delete-modal {
+    padding: 35px 22px 25px;
+  }
+
+  .delete-modal-actions {
+    grid-template-columns: 1fr;
+
+    flex-direction: column;
+  }
+}

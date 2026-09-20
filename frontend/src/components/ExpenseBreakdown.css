@@ -1,0 +1,455 @@
+/* =====================================================
+    EXPENSE BREAKDOWN
+===================================================== */
+
+.expense-breakdown {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 18px;
+  padding: 22px;
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.expense-breakdown-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.expense-breakdown-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #b08d25;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.expense-breakdown-header h2 {
+  margin: 0;
+  color: #171717;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.expense-breakdown-header p {
+  margin: 5px 0 0;
+  color: #8b8b8b;
+  font-size: 11px;
+}
+
+.expense-breakdown-header-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: #111111;
+  color: #d4af37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =====================================================
+   TOTAL
+===================================================== */
+
+.expense-breakdown-total {
+  margin-top: 18px;
+  padding: 15px;
+  background: #111111;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.expense-breakdown-total-icon {
+  width: 39px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #222222;
+  color: #d4af37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.expense-breakdown-total-content {
+  flex: 1;
+}
+
+.expense-breakdown-total-content span {
+  display: block;
+  color: #999999;
+  font-size: 9px;
+}
+
+.expense-breakdown-total-content strong {
+  display: block;
+  margin-top: 3px;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 850;
+}
+
+.expense-breakdown-largest {
+  text-align: right;
+}
+
+.expense-breakdown-largest span {
+  display: block;
+  color: #888888;
+  font-size: 8px;
+}
+
+.expense-breakdown-largest strong {
+  display: block;
+  margin-top: 3px;
+  color: #d4af37;
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   LIST
+===================================================== */
+
+.expense-breakdown-list {
+  margin-top: 15px;
+}
+
+.expense-breakdown-item {
+  min-height: 64px;
+  display: grid;
+  grid-template-columns: 180px minmax(100px, 1fr) 110px;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.expense-breakdown-item:last-child {
+  border-bottom: none;
+}
+
+
+/* =====================================================
+   CATEGORY
+===================================================== */
+
+.expense-breakdown-category {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+}
+
+.expense-breakdown-rank {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  border-radius: 7px;
+  background: #f4f4f4;
+  color: #8d6e19;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.expense-breakdown-category-info {
+  min-width: 0;
+}
+
+.expense-breakdown-category-info strong {
+  display: block;
+  overflow: hidden;
+  color: #333333;
+  font-size: 11px;
+  font-weight: 750;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.expense-breakdown-category-info span {
+  display: block;
+  margin-top: 3px;
+  color: #999999;
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   PROGRESS
+===================================================== */
+
+.expense-breakdown-progress {
+  width: 100%;
+}
+
+.expense-breakdown-progress-track {
+  width: 100%;
+  height: 7px;
+  overflow: hidden;
+  background: #eeeeee;
+  border-radius: 20px;
+}
+
+.expense-breakdown-progress-bar {
+  height: 100%;
+  min-width: 2px;
+  background: #d4af37;
+  border-radius: 20px;
+  transition: width 0.5s ease;
+}
+
+
+/* =====================================================
+   AMOUNT
+===================================================== */
+
+.expense-breakdown-amount {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.expense-breakdown-amount strong {
+  color: #171717;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.expense-breakdown-amount span {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.expense-change-up {
+  color: #a52b2b;
+}
+
+.expense-change-down {
+  color: #27733a;
+}
+
+.expense-change-neutral {
+  color: #888888;
+}
+
+.expense-breakdown-amount span svg {
+  font-size: 6px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.expense-breakdown-footer {
+  margin-top: 15px;
+  padding-top: 14px;
+  border-top: 1px solid #eeeeee;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.expense-breakdown-footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.expense-breakdown-footer span {
+  color: #999999;
+  font-size: 8px;
+}
+
+.expense-breakdown-footer strong {
+  color: #171717;
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.expense-breakdown-empty {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.expense-breakdown-empty-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 12px;
+  border-radius: 13px;
+  background: #111111;
+  color: #d4af37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+}
+
+.expense-breakdown-empty h3 {
+  margin: 0;
+  color: #171717;
+  font-size: 14px;
+}
+
+.expense-breakdown-empty p {
+  max-width: 350px;
+  margin: 6px auto 0;
+  color: #999999;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.expense-breakdown-loading {
+  margin-top: 18px;
+}
+
+.expense-breakdown-loading-total {
+  height: 68px;
+  border-radius: 13px;
+  background: #eeeeee;
+  animation: expenseBreakdownPulse 1.4s ease-in-out infinite;
+}
+
+.expense-breakdown-loading-list {
+  margin-top: 15px;
+}
+
+.expense-breakdown-skeleton {
+  height: 64px;
+  display: grid;
+  grid-template-columns: 180px 1fr 100px;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.expense-breakdown-skeleton div,
+.expense-breakdown-skeleton span {
+  height: 9px;
+  border-radius: 7px;
+  background: #eeeeee;
+  animation: expenseBreakdownPulse 1.4s ease-in-out infinite;
+}
+
+.expense-breakdown-skeleton div {
+  width: 75%;
+}
+
+.expense-breakdown-skeleton span:last-child {
+  width: 70px;
+}
+
+@keyframes expenseBreakdownPulse {
+  0% {
+    opacity: 0.45;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.45;
+  }
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+  .expense-breakdown-item {
+    grid-template-columns: 160px minmax(80px, 1fr) 100px;
+    gap: 12px;
+  }
+
+  .expense-breakdown-total {
+    align-items: flex-start;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .expense-breakdown {
+    padding: 17px;
+    border-radius: 15px;
+  }
+
+  .expense-breakdown-header h2 {
+    font-size: 16px;
+  }
+
+  .expense-breakdown-header p {
+    font-size: 10px;
+  }
+
+  .expense-breakdown-total {
+    padding: 13px;
+  }
+
+  .expense-breakdown-total-content strong {
+    font-size: 17px;
+  }
+
+  .expense-breakdown-largest {
+    display: none;
+  }
+
+  .expense-breakdown-item {
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  .expense-breakdown-progress {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .expense-breakdown-amount {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .expense-breakdown-footer {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+}

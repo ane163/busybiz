@@ -1,0 +1,653 @@
+/* =========================================================
+   BUSYBIZ CREATE MARKETPLACE LISTING
+   BLACK / WHITE / GOLD
+   ========================================================= */
+
+.create-marketplace-page {
+  min-height: 100%;
+  background: #f7f7f7;
+  color: #171717;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.create-marketplace-header {
+  min-height: 76px;
+  padding: 0 28px;
+  background: #ffffff;
+  border-bottom: 1px solid #e9e9e9;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.create-marketplace-back {
+  border: none;
+  background: transparent;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.create-marketplace-back:hover {
+  color: #b2870c;
+}
+
+.create-marketplace-back svg {
+  font-size: 10px;
+}
+
+.create-marketplace-header-title {
+  border-left: 1px solid #e5e5e5;
+  padding-left: 25px;
+}
+
+.create-marketplace-header-title h1 {
+  margin: 0;
+  color: #111111;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.create-marketplace-header-title p {
+  margin: 4px 0 0;
+  color: #999999;
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   FORM LAYOUT
+   ========================================================= */
+
+.create-marketplace-form {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 24px 25px 100px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  gap: 20px;
+}
+
+.create-marketplace-main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.create-marketplace-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.create-marketplace-card {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 7px;
+  padding: 20px;
+}
+
+.create-marketplace-card-header {
+  margin-bottom: 19px;
+}
+
+.create-marketplace-card-header h2 {
+  margin: 0;
+  color: #171717;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.create-marketplace-card-header p {
+  margin: 5px 0 0;
+  color: #999999;
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   FIELDS
+   ========================================================= */
+
+.create-marketplace-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 16px;
+}
+
+.create-marketplace-field:last-child {
+  margin-bottom: 0;
+}
+
+.create-marketplace-field label {
+  color: #333333;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.create-marketplace-field label span {
+  margin-left: 3px;
+  color: #b58a13;
+}
+
+.create-marketplace-field input,
+.create-marketplace-field select,
+.create-marketplace-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #222222;
+  outline: none;
+  font-family: inherit;
+  font-size: 10px;
+  transition: border-color 0.15s ease;
+}
+
+.create-marketplace-field input,
+.create-marketplace-field select {
+  height: 38px;
+  padding: 0 11px;
+}
+
+.create-marketplace-field textarea {
+  min-height: 130px;
+  padding: 11px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.create-marketplace-field input:focus,
+.create-marketplace-field select:focus,
+.create-marketplace-field textarea:focus {
+  border-color: #b78b0b;
+}
+
+.create-marketplace-field input::placeholder,
+.create-marketplace-field textarea::placeholder {
+  color: #b6b6b6;
+}
+
+.create-marketplace-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+
+/* =========================================================
+   PRICE
+   ========================================================= */
+
+.create-marketplace-price-input {
+  display: grid;
+  grid-template-columns: 82px 1fr;
+}
+
+.create-marketplace-price-input select {
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+}
+
+.create-marketplace-price-input input {
+  border-radius: 0 5px 5px 0;
+}
+
+
+/* =========================================================
+   CHECKBOX
+   ========================================================= */
+
+.create-marketplace-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 3px;
+  color: #555555;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.create-marketplace-checkbox input {
+  width: 14px;
+  height: 14px;
+  accent-color: #b88b0b;
+}
+
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+.create-marketplace-error {
+  color: #b42318;
+  font-size: 8px;
+}
+
+
+/* =========================================================
+   CHARACTER COUNT
+   ========================================================= */
+
+.create-marketplace-character-count {
+  margin-top: -2px;
+  color: #aaaaaa;
+  text-align: right;
+  font-size: 8px;
+}
+
+
+/* =========================================================
+   IMAGE UPLOAD
+   ========================================================= */
+
+.create-marketplace-upload-area {
+  min-height: 190px;
+  border: 1px dashed #cccccc;
+  border-radius: 6px;
+  background: #fafafa;
+  padding: 10px;
+}
+
+.create-marketplace-upload-button {
+  width: 100%;
+  min-height: 168px;
+  border: none;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.create-marketplace-upload-button svg {
+  margin-bottom: 11px;
+  color: #bd9014;
+  font-size: 29px;
+}
+
+.create-marketplace-upload-button strong {
+  color: #333333;
+  font-size: 10px;
+}
+
+.create-marketplace-upload-button span {
+  margin-top: 5px;
+  color: #aaaaaa;
+  font-size: 8px;
+}
+
+
+/* =========================================================
+   IMAGE GRID
+   ========================================================= */
+
+.create-marketplace-image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
+}
+
+.create-marketplace-image {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #eeeeee;
+}
+
+.create-marketplace-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.create-marketplace-image > button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.72);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.create-marketplace-image > button svg {
+  font-size: 8px;
+}
+
+.create-marketplace-main-label {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  padding: 3px 5px;
+  border-radius: 3px;
+  background: #b78a0b;
+  color: #ffffff;
+  font-size: 7px;
+  font-weight: 700;
+}
+
+.create-marketplace-add-image {
+  aspect-ratio: 1;
+  border: 1px dashed #cccccc;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #999999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.create-marketplace-add-image:hover {
+  border-color: #bd9014;
+  color: #bd9014;
+}
+
+.create-marketplace-add-image svg {
+  font-size: 12px;
+}
+
+.create-marketplace-add-image span {
+  font-size: 8px;
+}
+
+
+/* =========================================================
+   IMAGE NOTE
+   ========================================================= */
+
+.create-marketplace-image-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  margin-top: 10px;
+  color: #999999;
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+.create-marketplace-image-note svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: #b58a0c;
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   PREVIEW
+   ========================================================= */
+
+.create-marketplace-preview {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 7px;
+}
+
+.create-marketplace-preview-header {
+  height: 48px;
+  padding: 0 15px;
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.create-marketplace-preview-header h2 {
+  margin: 0;
+  color: #222222;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.create-marketplace-preview-header span {
+  padding: 3px 6px;
+  border-radius: 3px;
+  background: #f4edda;
+  color: #9b7608;
+  font-size: 7px;
+  font-weight: 700;
+}
+
+.create-marketplace-preview-image {
+  height: 190px;
+  background: #f2f2f2;
+}
+
+.create-marketplace-preview-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.create-marketplace-preview-image > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: #aaaaaa;
+}
+
+.create-marketplace-preview-image svg {
+  color: #c09a2d;
+  font-size: 24px;
+}
+
+.create-marketplace-preview-image span {
+  font-size: 8px;
+}
+
+.create-marketplace-preview-body {
+  padding: 15px;
+}
+
+.create-marketplace-preview-category {
+  color: #a77d08;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.create-marketplace-preview-body h3 {
+  margin: 7px 0;
+  color: #222222;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.create-marketplace-preview-body strong {
+  color: #111111;
+  font-size: 14px;
+}
+
+.create-marketplace-preview-body p {
+  margin: 8px 0 0;
+  color: #999999;
+  font-size: 8px;
+}
+
+
+/* =========================================================
+   BOTTOM ACTIONS
+   ========================================================= */
+
+.create-marketplace-actions {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  min-height: 64px;
+  padding: 10px 28px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-top: 1px solid #dddddd;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+.create-marketplace-actions button {
+  height: 36px;
+  padding: 0 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-family: inherit;
+  font-size: 9px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.create-marketplace-cancel {
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  color: #555555;
+}
+
+.create-marketplace-cancel:hover {
+  border-color: #bbbbbb;
+}
+
+.create-marketplace-draft {
+  border: 1px solid #222222;
+  background: #222222;
+  color: #ffffff;
+}
+
+.create-marketplace-draft:hover {
+  background: #000000;
+}
+
+.create-marketplace-publish {
+  border: 1px solid #b88a0a;
+  background: #b88a0a;
+  color: #ffffff;
+}
+
+.create-marketplace-publish:hover {
+  background: #9e7505;
+}
+
+.create-marketplace-actions svg {
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+  .create-marketplace-form {
+    grid-template-columns: 1fr;
+  }
+
+  .create-marketplace-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .create-marketplace-header {
+    padding: 0 15px;
+  }
+
+  .create-marketplace-header-title {
+    padding-left: 15px;
+  }
+
+  .create-marketplace-header-title h1 {
+    font-size: 15px;
+  }
+
+  .create-marketplace-form {
+    padding: 15px 12px 95px;
+  }
+
+  .create-marketplace-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .create-marketplace-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .create-marketplace-actions {
+    padding: 9px 12px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .create-marketplace-back span {
+    display: none;
+  }
+
+  .create-marketplace-header {
+    gap: 15px;
+  }
+
+  .create-marketplace-header-title {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .create-marketplace-actions {
+    justify-content: stretch;
+  }
+
+  .create-marketplace-actions button {
+    flex: 1;
+    padding: 0 7px;
+  }
+
+}

@@ -1,0 +1,1534 @@
+/* =========================================================
+   BUSYBIZ MARKETPLACE PRODUCT DETAILS
+   BLACK / WHITE / GOLD
+   ========================================================= */
+
+
+.marketplace-product-page {
+
+  min-height: 100%;
+
+  width: 100%;
+
+  background: #ffffff;
+
+  color: #161616;
+
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+}
+
+
+/* =========================================================
+   TOP BAR
+   ========================================================= */
+
+
+.marketplace-product-topbar {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  min-height: 55px;
+
+  padding: 0 22px;
+
+  border-bottom: 1px solid #eeeeee;
+
+}
+
+
+.marketplace-back-button {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #555555;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+}
+
+
+.marketplace-back-button:hover {
+
+  color: #b88900;
+
+}
+
+
+.marketplace-back-button svg {
+
+  font-size: 11px;
+
+}
+
+
+/* =========================================================
+   SHARE / SAVE
+   ========================================================= */
+
+
+.marketplace-product-actions {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+}
+
+
+.marketplace-product-actions button {
+
+  height: 34px;
+
+  padding: 0 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 5px;
+
+  background: #ffffff;
+
+  color: #333333;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease;
+
+}
+
+
+.marketplace-product-actions button:hover {
+
+  border-color: #c59616;
+
+  color: #a47700;
+
+}
+
+
+.marketplace-product-actions button svg {
+
+  font-size: 10px;
+
+}
+
+
+.marketplace-product-actions
+.marketplace-save-active {
+
+  background: #fffaf0;
+
+  border-color: #c59616;
+
+  color: #b88600;
+
+}
+
+
+/* =========================================================
+   BREADCRUMB
+   ========================================================= */
+
+
+.marketplace-product-breadcrumb {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 14px 22px;
+
+  color: #8a8a8a;
+
+  font-size: 10px;
+
+  border-bottom: 1px solid #f0f0f0;
+
+}
+
+
+.marketplace-product-breadcrumb span {
+
+  cursor: default;
+
+}
+
+
+.marketplace-product-breadcrumb span:first-child {
+
+  color: #333333;
+
+  cursor: pointer;
+
+}
+
+
+.marketplace-product-breadcrumb span:first-child:hover {
+
+  color: #b88600;
+
+}
+
+
+/* =========================================================
+   MAIN PRODUCT AREA
+   ========================================================= */
+
+
+.marketplace-product-main {
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(430px, 1.15fr)
+    minmax(400px, 0.85fr);
+
+  gap: 34px;
+
+  padding: 25px 22px 30px;
+
+  border-bottom: 1px solid #eeeeee;
+
+}
+
+
+/* =========================================================
+   GALLERY
+   ========================================================= */
+
+
+.marketplace-product-gallery {
+
+  display: grid;
+
+  grid-template-columns: 68px 1fr;
+
+  gap: 14px;
+
+  min-width: 0;
+
+}
+
+
+.marketplace-product-thumbnails {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+}
+
+
+.marketplace-product-thumbnails button {
+
+  width: 60px;
+
+  height: 60px;
+
+  padding: 2px;
+
+  background: #f6f6f6;
+
+  border: 1px solid #e4e4e4;
+
+  border-radius: 5px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+}
+
+
+.marketplace-product-thumbnails button:hover {
+
+  border-color: #c89a1b;
+
+}
+
+
+.marketplace-product-thumbnails
+.marketplace-thumbnail-active {
+
+  border: 2px solid #c69612;
+
+}
+
+
+.marketplace-product-thumbnails img {
+
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+}
+
+
+.marketplace-more-images {
+
+  background: #111111 !important;
+
+  color: #ffffff;
+
+  border-color: #111111 !important;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+}
+
+
+/* =========================================================
+   MAIN IMAGE
+   ========================================================= */
+
+
+.marketplace-product-main-image {
+
+  position: relative;
+
+  min-width: 0;
+
+  height: 390px;
+
+  background: #f6f6f6;
+
+  border-radius: 7px;
+
+  overflow: hidden;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+
+.marketplace-product-main-image > img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+
+  display: block;
+
+}
+
+
+.marketplace-no-product-image {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #999999;
+
+  font-size: 12px;
+
+}
+
+
+.marketplace-no-product-image svg {
+
+  font-size: 40px;
+
+}
+
+
+/* =========================================================
+   IMAGE ARROWS
+   ========================================================= */
+
+
+.marketplace-image-arrow {
+
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 32px;
+
+  height: 32px;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  color: #333333;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.marketplace-image-arrow:hover {
+
+  background: #111111;
+
+  color: #ffffff;
+
+}
+
+
+.marketplace-image-arrow-left {
+
+  left: 10px;
+
+}
+
+
+.marketplace-image-arrow-right {
+
+  right: 10px;
+
+}
+
+
+/* =========================================================
+   PRODUCT INFORMATION
+   ========================================================= */
+
+
+.marketplace-product-information {
+
+  padding: 4px 4px 0 0;
+
+}
+
+
+.marketplace-product-condition-row {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 8px;
+
+}
+
+
+.marketplace-product-condition {
+
+  padding: 4px 8px;
+
+  border-radius: 4px;
+
+  background: #111111;
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+}
+
+
+.marketplace-in-stock {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 4px 8px;
+
+  border-radius: 4px;
+
+  background: #eef8ee;
+
+  color: #258329;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+}
+
+
+.marketplace-in-stock span {
+
+  width: 6px;
+
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #2d9b32;
+
+}
+
+
+.marketplace-product-information h1 {
+
+  margin: 0 0 8px;
+
+  color: #111111;
+
+  font-size: 25px;
+
+  line-height: 1.2;
+
+  font-weight: 750;
+
+}
+
+
+.marketplace-product-price {
+
+  margin-bottom: 22px;
+
+  color: #bd8d00;
+
+  font-size: 24px;
+
+  font-weight: 800;
+
+}
+
+
+.marketplace-product-price span {
+
+  margin-right: 4px;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+}
+
+
+/* =========================================================
+   QUICK DETAILS
+   ========================================================= */
+
+
+.marketplace-product-quick-details {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px 12px;
+
+  padding: 17px 0;
+
+  border-top: 1px solid #eeeeee;
+
+  border-bottom: 1px solid #eeeeee;
+
+}
+
+
+.marketplace-product-quick-details > div {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 7px;
+
+  min-width: 0;
+
+}
+
+
+.marketplace-product-quick-details svg {
+
+  flex-shrink: 0;
+
+  margin-top: 2px;
+
+  color: #999999;
+
+  font-size: 11px;
+
+}
+
+
+.marketplace-product-quick-details span {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+
+  min-width: 0;
+
+  color: #333333;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+}
+
+
+.marketplace-product-quick-details small {
+
+  color: #999999;
+
+  font-size: 8px;
+
+  font-weight: 500;
+
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+
+.marketplace-product-description {
+
+  padding-top: 20px;
+
+}
+
+
+.marketplace-product-description h3 {
+
+  margin: 0 0 9px;
+
+  color: #111111;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.3px;
+
+}
+
+
+.marketplace-product-description p {
+
+  margin: 0;
+
+  max-width: 620px;
+
+  color: #666666;
+
+  font-size: 11px;
+
+  line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   SELLER + CONTACT
+   ========================================================= */
+
+
+.marketplace-product-bottom {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 40px;
+
+  padding: 25px 22px 28px;
+
+}
+
+
+.marketplace-product-bottom h3 {
+
+  margin: 0 0 17px;
+
+  color: #111111;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.2px;
+
+}
+
+
+/* =========================================================
+   SELLER PROFILE
+   ========================================================= */
+
+
+.marketplace-seller-profile-row {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+}
+
+
+.marketplace-large-seller-avatar {
+
+  width: 48px;
+
+  height: 48px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #111111;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  font-size: 16px;
+
+  font-weight: 800;
+
+}
+
+
+.marketplace-large-seller-avatar img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+}
+
+
+.marketplace-seller-profile-details {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+
+}
+
+
+.marketplace-seller-profile-name {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+}
+
+
+.marketplace-seller-profile-name strong {
+
+  color: #222222;
+
+  font-size: 13px;
+
+}
+
+
+.marketplace-seller-profile-name svg {
+
+  color: #c39616;
+
+  font-size: 11px;
+
+}
+
+
+.marketplace-seller-profile-details > span {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  color: #888888;
+
+  font-size: 9px;
+
+}
+
+
+.marketplace-seller-profile-details > span svg {
+
+  font-size: 8px;
+
+}
+
+
+.marketplace-verified-business {
+
+  color: #9a7300 !important;
+
+  font-weight: 600;
+
+}
+
+
+.marketplace-view-seller-button {
+
+  width: 135px;
+
+  height: 34px;
+
+  margin-top: 18px;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 5px;
+
+  background: #ffffff;
+
+  color: #333333;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+}
+
+
+.marketplace-view-seller-button:hover {
+
+  border-color: #bf8e00;
+
+  color: #a47700;
+
+}
+
+
+/* =========================================================
+   CONTACT SELLER
+   ========================================================= */
+
+
+.marketplace-contact-buttons {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 8px;
+
+}
+
+
+.marketplace-contact-buttons button {
+
+  height: 38px;
+
+  border-radius: 5px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+}
+
+
+.marketplace-contact-buttons svg {
+
+  font-size: 11px;
+
+}
+
+
+.marketplace-chat-button {
+
+  border: 1px solid #111111;
+
+  background: #111111;
+
+  color: #ffffff;
+
+}
+
+
+.marketplace-chat-button:hover {
+
+  background: #252525;
+
+}
+
+
+.marketplace-call-button {
+
+  border: 1px solid #dddddd;
+
+  background: #ffffff;
+
+  color: #333333;
+
+}
+
+
+.marketplace-call-button:hover {
+
+  border-color: #c49614;
+
+  color: #a47600;
+
+}
+
+
+.marketplace-whatsapp-button {
+
+  grid-column: 1 / -1;
+
+  border: 1px solid #dddddd;
+
+  background: #ffffff;
+
+  color: #333333;
+
+}
+
+
+.marketplace-whatsapp-button:hover {
+
+  border-color: #c49614;
+
+  color: #a47600;
+
+}
+
+
+/* =========================================================
+   SAFETY NOTICE
+   ========================================================= */
+
+
+.marketplace-safety-notice {
+
+  margin-top: 13px;
+
+  padding: 12px;
+
+  border-left: 3px solid #c49715;
+
+  background: #fffaf0;
+
+}
+
+
+.marketplace-safety-notice strong {
+
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #927000;
+
+  font-size: 9px;
+
+}
+
+
+.marketplace-safety-notice p {
+
+  margin: 0;
+
+  color: #766b50;
+
+  font-size: 9px;
+
+  line-height: 1.5;
+
+}
+
+
+/* =========================================================
+   REPORT
+   ========================================================= */
+
+
+.marketplace-product-report {
+
+  padding: 0 22px 20px;
+
+}
+
+
+.marketplace-product-report button {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #999999;
+
+  font-size: 9px;
+
+  cursor: pointer;
+
+}
+
+
+.marketplace-product-report button:hover {
+
+  color: #b33a3a;
+
+}
+
+
+.marketplace-product-report svg {
+
+  font-size: 9px;
+
+}
+
+
+/* =========================================================
+   LOADING
+   ========================================================= */
+
+
+.marketplace-product-loading {
+
+  min-height: 500px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  color: #777777;
+
+  font-size: 12px;
+
+}
+
+
+.marketplace-loading-spinner {
+
+  width: 30px;
+
+  height: 30px;
+
+  border: 3px solid #eeeeee;
+
+  border-top-color: #c29412;
+
+  border-radius: 50%;
+
+  animation:
+    marketplace-spin 0.8s linear infinite;
+
+}
+
+
+@keyframes marketplace-spin {
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+
+/* =========================================================
+   NOT FOUND
+   ========================================================= */
+
+
+.marketplace-product-not-found {
+
+  min-height: 500px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 30px;
+
+}
+
+
+.marketplace-product-not-found > svg {
+
+  margin-bottom: 15px;
+
+  color: #c39512;
+
+  font-size: 35px;
+
+}
+
+
+.marketplace-product-not-found h2 {
+
+  margin: 0 0 8px;
+
+  color: #111111;
+
+  font-size: 20px;
+
+}
+
+
+.marketplace-product-not-found p {
+
+  max-width: 400px;
+
+  margin: 0 0 18px;
+
+  color: #777777;
+
+  font-size: 11px;
+
+  line-height: 1.6;
+
+}
+
+
+.marketplace-product-not-found button {
+
+  height: 36px;
+
+  padding: 0 16px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background: #111111;
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+}
+
+
+/* =========================================================
+   REPORT MODAL
+   ========================================================= */
+
+
+.marketplace-report-overlay {
+
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.55);
+
+}
+
+
+.marketplace-report-modal {
+
+  position: relative;
+
+  width: 100%;
+
+  max-width: 380px;
+
+  padding: 28px;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.marketplace-report-close {
+
+  position: absolute;
+
+  top: 12px;
+
+  right: 12px;
+
+  width: 28px;
+
+  height: 28px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #f5f5f5;
+
+  color: #777777;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+}
+
+
+.marketplace-report-icon {
+
+  color: #bd8d00;
+
+  font-size: 25px;
+
+}
+
+
+.marketplace-report-modal h2 {
+
+  margin: 12px 0 5px;
+
+  color: #111111;
+
+  font-size: 18px;
+
+}
+
+
+.marketplace-report-modal p {
+
+  margin: 0 0 18px;
+
+  color: #777777;
+
+  font-size: 11px;
+
+}
+
+
+.marketplace-report-modal > button:not(
+  .marketplace-report-close
+) {
+
+  width: 100%;
+
+  min-height: 38px;
+
+  margin-bottom: 7px;
+
+  padding: 8px 12px;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 5px;
+
+  background: #ffffff;
+
+  color: #333333;
+
+  text-align: left;
+
+  font-size: 10px;
+
+  cursor: pointer;
+
+}
+
+
+.marketplace-report-modal > button:not(
+  .marketplace-report-close
+):hover {
+
+  border-color: #c49614;
+
+  background: #fffaf0;
+
+  color: #927000;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+
+@media (max-width: 1000px) {
+
+  .marketplace-product-main {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .marketplace-product-information {
+
+    padding-right: 0;
+
+  }
+
+}
+
+
+@media (max-width: 760px) {
+
+  .marketplace-product-main {
+
+    padding: 18px 15px 25px;
+
+  }
+
+  .marketplace-product-bottom {
+
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+
+    padding: 22px 15px;
+
+  }
+
+  .marketplace-product-topbar {
+
+    padding: 0 15px;
+
+  }
+
+  .marketplace-product-breadcrumb {
+
+    padding: 12px 15px;
+
+    overflow-x: auto;
+
+    white-space: nowrap;
+
+  }
+
+  .marketplace-product-gallery {
+
+    grid-template-columns: 55px 1fr;
+
+  }
+
+  .marketplace-product-thumbnails button {
+
+    width: 50px;
+
+    height: 50px;
+
+  }
+
+  .marketplace-product-main-image {
+
+    height: 330px;
+
+  }
+
+  .marketplace-product-quick-details {
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .marketplace-back-button span {
+
+    display: none;
+
+  }
+
+  .marketplace-product-actions
+  button span {
+
+    display: none;
+
+  }
+
+  .marketplace-product-actions button {
+
+    width: 34px;
+
+    padding: 0;
+
+  }
+
+  .marketplace-product-gallery {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .marketplace-product-thumbnails {
+
+    order: 2;
+
+    flex-direction: row;
+
+    overflow-x: auto;
+
+  }
+
+  .marketplace-product-thumbnails button {
+
+    flex-shrink: 0;
+
+  }
+
+  .marketplace-product-main-image {
+
+    height: 300px;
+
+  }
+
+  .marketplace-product-information h1 {
+
+    font-size: 21px;
+
+  }
+
+  .marketplace-product-price {
+
+    font-size: 22px;
+
+  }
+
+  .marketplace-contact-buttons {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .marketplace-whatsapp-button {
+
+    grid-column: auto;
+
+  }
+
+}

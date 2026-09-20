@@ -1,0 +1,570 @@
+.billing-page {
+  min-height: 100vh;
+  padding: 35px;
+  background: #f7f7f5;
+  color: #171717;
+}
+
+.billing-header {
+  margin-bottom: 35px;
+}
+
+.billing-eyebrow {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #b8860b;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.billing-header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.billing-header p {
+  margin-top: 8px;
+  color: #777;
+  font-size: 15px;
+}
+
+.billing-loading {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+}
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.section-title {
+  margin-bottom: 18px;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.section-title p {
+  margin-top: 5px;
+  color: #777;
+  font-size: 14px;
+}
+
+/* =========================================
+   CURRENT PLAN
+========================================= */
+
+.current-plan-section {
+  margin-bottom: 45px;
+}
+
+.current-plan-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr auto;
+  align-items: center;
+  gap: 30px;
+
+  padding: 28px;
+
+  background: #ffffff;
+
+  border: 1px solid #e8e8e8;
+  border-radius: 18px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.current-plan-main h3 {
+  margin: 12px 0 8px;
+  font-size: 24px;
+}
+
+.plan-badge {
+  display: inline-flex;
+  padding: 6px 12px;
+
+  border-radius: 50px;
+
+  background: #fff4d6;
+  color: #a66b00;
+
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.plan-status {
+  color: #777;
+  font-size: 14px;
+}
+
+.status-active {
+  margin-left: 7px;
+  color: #16a34a;
+  font-weight: 700;
+}
+
+.status-trial {
+  margin-left: 7px;
+  color: #b8860b;
+  font-weight: 700;
+}
+
+.status-expired,
+.status-cancelled {
+  margin-left: 7px;
+  color: #dc2626;
+  font-weight: 700;
+}
+
+.trial-message {
+  color: #b8860b;
+  font-weight: 600;
+}
+
+.current-price {
+  margin-top: 12px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.current-price span {
+  font-size: 13px;
+  color: #777;
+  font-weight: 500;
+}
+
+.current-plan-details {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.billing-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.billing-detail span {
+  color: #888;
+  font-size: 12px;
+}
+
+.billing-detail strong {
+  font-size: 14px;
+}
+
+.subscription-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cancel-button,
+.reactivate-button {
+  padding: 11px 18px;
+
+  border-radius: 9px;
+
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cancel-button {
+  border: 1px solid #f0caca;
+  background: #fff5f5;
+  color: #dc2626;
+}
+
+.reactivate-button {
+  border: 0;
+  background: #171717;
+  color: white;
+}
+
+/* =========================================
+   PRICING
+========================================= */
+
+.pricing-section {
+  margin-bottom: 45px;
+}
+
+.pricing-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.pricing-header h2 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.pricing-header p {
+  color: #777;
+  font-size: 14px;
+}
+
+.billing-toggle {
+  display: flex;
+  padding: 4px;
+
+  background: #ededeb;
+
+  border-radius: 10px;
+}
+
+.billing-toggle button {
+  position: relative;
+
+  padding: 9px 15px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #666;
+
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.billing-toggle button.active {
+  background: #ffffff;
+  color: #171717;
+
+  box-shadow:
+    0 2px 7px rgba(0, 0, 0, 0.08);
+}
+
+.billing-toggle span {
+  margin-left: 6px;
+  color: #b8860b;
+  font-size: 10px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+.pricing-card {
+  position: relative;
+
+  padding: 28px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e5e5;
+
+  border-radius: 18px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.pricing-card.popular {
+  border: 2px solid #c69214;
+
+  box-shadow:
+    0 12px 35px rgba(198, 146, 20, 0.12);
+}
+
+.pricing-card.current {
+  background: #fffdf8;
+}
+
+.popular-label {
+  position: absolute;
+  top: -12px;
+  left: 24px;
+
+  padding: 5px 10px;
+
+  background: #c69214;
+  color: white;
+
+  border-radius: 5px;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.pricing-card h3 {
+  margin: 0;
+
+  font-size: 22px;
+}
+
+.pricing-description {
+  min-height: 40px;
+
+  color: #777;
+  font-size: 13px;
+}
+
+.pricing-price {
+  margin: 20px 0;
+
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.pricing-price span {
+  font-size: 20px;
+  vertical-align: top;
+}
+
+.pricing-price small {
+  color: #777;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.yearly-note {
+  color: #b8860b;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.pricing-card ul {
+  min-height: 190px;
+
+  padding: 0;
+  margin: 25px 0;
+
+  list-style: none;
+}
+
+.pricing-card li {
+  display: flex;
+  gap: 10px;
+
+  margin-bottom: 13px;
+
+  color: #555;
+  font-size: 14px;
+}
+
+.pricing-card li span {
+  color: #b8860b;
+  font-weight: 900;
+}
+
+.select-plan-button,
+.current-plan-button {
+  width: 100%;
+
+  padding: 13px;
+
+  border-radius: 9px;
+
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.select-plan-button {
+  border: 1px solid #171717;
+  background: #171717;
+  color: white;
+}
+
+.pricing-card.popular
+.select-plan-button {
+  border-color: #c69214;
+  background: #c69214;
+}
+
+.current-plan-button {
+  border: 1px solid #ddd;
+  background: #f3f3f1;
+  color: #999;
+
+  cursor: default;
+}
+
+/* =========================================
+   BILLING HISTORY
+========================================= */
+
+.billing-history-section {
+  margin-bottom: 40px;
+}
+
+.billing-history-card {
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #e7e7e7;
+
+  border-radius: 18px;
+}
+
+.payment-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.payment-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.payment-table th,
+.payment-table td {
+  padding: 17px 20px;
+
+  text-align: left;
+
+  border-bottom: 1px solid #eeeeee;
+
+  font-size: 13px;
+}
+
+.payment-table th {
+  background: #fafaf8;
+
+  color: #777;
+
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.transaction-id {
+  color: #777;
+  font-family: monospace;
+}
+
+.payment-status {
+  display: inline-flex;
+
+  padding: 5px 9px;
+
+  border-radius: 50px;
+
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.payment-status.paid {
+  background: #e8f8ee;
+  color: #16803a;
+}
+
+.payment-status.pending {
+  background: #fff5dc;
+  color: #a66b00;
+}
+
+.payment-status.failed {
+  background: #ffecec;
+  color: #c62828;
+}
+
+.payment-status.cancelled {
+  background: #eeeeee;
+  color: #666;
+}
+
+.empty-payments {
+  padding: 60px 20px;
+
+  text-align: center;
+}
+
+.empty-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 15px;
+
+  border-radius: 50%;
+
+  background: #fff4d6;
+  color: #b8860b;
+
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.empty-payments h3 {
+  margin: 0;
+}
+
+.empty-payments p {
+  color: #888;
+  font-size: 14px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .current-plan-card {
+    grid-template-columns: 1fr;
+  }
+
+  .subscription-actions {
+    justify-content: flex-start;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .billing-page {
+    padding: 20px;
+  }
+
+  .pricing-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .billing-header h1 {
+    font-size: 26px;
+  }
+
+  .current-plan-card {
+    padding: 20px;
+  }
+
+}

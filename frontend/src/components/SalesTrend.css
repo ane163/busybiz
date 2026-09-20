@@ -1,0 +1,527 @@
+/* =====================================================
+   BUSYBIZ SALES TREND
+   PREMIUM BLACK / WHITE / GOLD
+===================================================== */
+
+.sales-trend-card {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 18px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.sales-trend-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.sales-trend-label {
+  display: block;
+  color: #b08d25;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 5px;
+}
+
+.sales-trend-header h2 {
+  margin: 0;
+  color: #171717;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.sales-trend-header p {
+  margin: 5px 0 0;
+  color: #888888;
+  font-size: 12px;
+}
+
+.sales-trend-header > svg {
+  color: #d4af37;
+  font-size: 21px;
+}
+
+.sales-trend-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sales-trend-header-actions select {
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  color: #333333;
+  padding: 9px 11px;
+  border-radius: 9px;
+  font-size: 11px;
+  font-weight: 650;
+  outline: none;
+  cursor: pointer;
+}
+
+.sales-trend-header-actions select:focus {
+  border-color: #d4af37;
+}
+
+.sales-trend-refresh {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  border-radius: 9px;
+  color: #555555;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sales-trend-refresh:hover {
+  background: #111111;
+  border-color: #111111;
+  color: #d4af37;
+}
+
+.sales-trend-refresh:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* =====================================================
+   SUMMARY
+===================================================== */
+
+.sales-trend-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.sales-trend-summary-card {
+  background: #fafafa;
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.sales-trend-summary-card span {
+  display: block;
+  color: #888888;
+  font-size: 10px;
+}
+
+.sales-trend-summary-card strong {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 6px;
+  color: #171717;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.sales-trend-percentage.up {
+  color: #28733a;
+}
+
+.sales-trend-percentage.down {
+  color: #a52e2e;
+}
+
+.sales-trend-percentage.neutral {
+  color: #777777;
+}
+
+
+/* =====================================================
+   CHART
+===================================================== */
+
+.sales-trend-chart {
+  display: flex;
+  height: 330px;
+  margin-top: 28px;
+}
+
+.sales-trend-y-axis {
+  width: 75px;
+  flex-shrink: 0;
+  padding: 0 10px 38px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.sales-trend-y-axis span {
+  color: #999999;
+  font-size: 9px;
+  white-space: nowrap;
+}
+
+.sales-trend-chart-area {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.sales-trend-grid-lines {
+  position: absolute;
+  inset: 0 0 38px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sales-trend-grid-lines span {
+  width: 100%;
+  border-top: 1px dashed #eeeeee;
+}
+
+
+/* =====================================================
+   BARS
+===================================================== */
+
+.sales-trend-bars {
+  position: absolute;
+  inset: 0;
+  padding: 0 12px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  gap: 12px;
+}
+
+.sales-trend-bar-wrapper {
+  position: relative;
+  flex: 1;
+  max-width: 90px;
+  min-width: 25px;
+  height: calc(100% - 38px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.sales-trend-bar {
+  width: 55%;
+  min-width: 10px;
+  max-width: 42px;
+  background: #111111;
+  border-radius: 7px 7px 0 0;
+  position: relative;
+  z-index: 2;
+  transition:
+    height 0.4s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.sales-trend-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #d4af37;
+  border-radius: 7px 7px 0 0;
+}
+
+.sales-trend-bar-wrapper:hover .sales-trend-bar {
+  background: #222222;
+  transform: scaleX(1.08);
+}
+
+.sales-trend-bar-label {
+  position: absolute;
+  bottom: -29px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #777777;
+  font-size: 9px;
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   TOOLTIP
+===================================================== */
+
+.sales-trend-tooltip {
+  position: absolute;
+  bottom: calc(
+    var(--sales-trend-height, 50%) + 8px
+  );
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111111;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 7px 9px;
+  min-width: 75px;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s;
+  z-index: 10;
+}
+
+.sales-trend-bar-wrapper:hover .sales-trend-tooltip {
+  opacity: 1;
+}
+
+.sales-trend-tooltip strong {
+  display: block;
+  color: #d4af37;
+  font-size: 10px;
+}
+
+.sales-trend-tooltip span {
+  display: block;
+  margin-top: 2px;
+  color: #cccccc;
+  font-size: 8px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.sales-trend-footer {
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sales-trend-footer span {
+  color: #999999;
+  font-size: 10px;
+}
+
+.sales-trend-footer strong {
+  color: #555555;
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.sales-trend-empty {
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sales-trend-empty svg {
+  color: #d4af37;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.sales-trend-empty h3 {
+  margin: 0;
+  color: #222222;
+  font-size: 15px;
+}
+
+.sales-trend-empty p {
+  max-width: 350px;
+  margin: 6px 0 0;
+  color: #999999;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.sales-trend-loading {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sales-trend-spinner {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #111111;
+  color: #d4af37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sales-trend-loading p {
+  margin: 12px 0 0;
+  color: #888888;
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   ERROR
+===================================================== */
+
+.sales-trend-error {
+  min-height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  color: #a02c2c;
+  text-align: left;
+}
+
+.sales-trend-error > svg {
+  font-size: 25px;
+}
+
+.sales-trend-error strong {
+  display: block;
+  font-size: 13px;
+}
+
+.sales-trend-error p {
+  margin: 4px 0 10px;
+  color: #888888;
+  font-size: 11px;
+}
+
+.sales-trend-error button {
+  border: none;
+  background: #111111;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sales-trend-error button:hover {
+  background: #d4af37;
+  color: #000000;
+}
+
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+.sales-trend-spin {
+  animation: salesTrendSpin 0.8s linear infinite;
+}
+
+@keyframes salesTrendSpin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .sales-trend-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .sales-trend-card {
+    padding: 17px;
+    border-radius: 14px;
+  }
+
+  .sales-trend-header {
+    flex-direction: column;
+  }
+
+  .sales-trend-header-actions {
+    width: 100%;
+  }
+
+  .sales-trend-header-actions select {
+    flex: 1;
+  }
+
+  .sales-trend-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sales-trend-chart {
+    height: 280px;
+  }
+
+  .sales-trend-y-axis {
+    width: 60px;
+  }
+
+  .sales-trend-bars {
+    gap: 5px;
+    padding: 0 5px;
+  }
+
+  .sales-trend-bar {
+    width: 65%;
+  }
+
+}
+
+
+@media (max-width: 420px) {
+
+  .sales-trend-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .sales-trend-summary-card strong {
+    font-size: 15px;
+  }
+
+  .sales-trend-y-axis {
+    width: 55px;
+  }
+
+}

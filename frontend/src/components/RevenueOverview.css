@@ -1,0 +1,386 @@
+/* =====================================================
+   BUSYBIZ REVENUE OVERVIEW
+   PREMIUM BLACK / WHITE / GOLD
+===================================================== */
+
+.revenue-overview {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 18px;
+  padding: 22px;
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.revenue-overview-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.revenue-overview-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #b08d25;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.revenue-overview-header h2 {
+  margin: 0;
+  color: #171717;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.revenue-overview-header p {
+  margin: 5px 0 0;
+  color: #8b8b8b;
+  font-size: 11px;
+}
+
+.revenue-overview-header-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: #111111;
+  color: #d4af37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =====================================================
+   SUMMARY
+===================================================== */
+
+.revenue-overview-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.revenue-overview-summary-card {
+  border: 1px solid #eeeeee;
+  border-radius: 13px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.revenue-overview-summary-card:hover {
+  border-color: #d4af37;
+}
+
+.revenue-overview-summary-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: #111111;
+  color: #d4af37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.revenue-overview-summary-card span {
+  display: block;
+  color: #888888;
+  font-size: 9px;
+}
+
+.revenue-overview-summary-card strong {
+  display: block;
+  margin-top: 3px;
+  color: #171717;
+  font-size: 15px;
+}
+
+.revenue-overview-profit {
+  border-top: 2px solid #d4af37;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.revenue-overview-table-wrapper {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.revenue-overview-table {
+  min-width: 650px;
+}
+
+.revenue-overview-row {
+  min-height: 54px;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr 80px;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.revenue-overview-row:last-child {
+  border-bottom: none;
+}
+
+.revenue-overview-row-header {
+  min-height: 38px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.revenue-overview-row-header span {
+  color: #999999;
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.revenue-overview-row > strong {
+  overflow: hidden;
+  color: #333333;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.revenue-value,
+.expense-value,
+.profit-value {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.revenue-value {
+  color: #171717;
+}
+
+.expense-value {
+  color: #777777;
+}
+
+.profit-value.positive {
+  color: #27733a;
+}
+
+.profit-value.negative {
+  color: #a52b2b;
+}
+
+
+/* =====================================================
+   GROWTH
+===================================================== */
+
+.revenue-growth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.revenue-growth.positive {
+  color: #27733a;
+}
+
+.revenue-growth.negative {
+  color: #a52b2b;
+}
+
+.revenue-growth.neutral {
+  color: #888888;
+}
+
+.revenue-growth svg {
+  font-size: 7px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.revenue-overview-footer {
+  margin-top: 17px;
+  padding-top: 15px;
+  border-top: 1px solid #eeeeee;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.revenue-overview-footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.revenue-overview-footer span {
+  color: #999999;
+  font-size: 9px;
+}
+
+.revenue-overview-footer strong {
+  color: #171717;
+  font-size: 13px;
+}
+
+.revenue-overview-footer strong.positive {
+  color: #27733a;
+}
+
+.revenue-overview-footer strong.negative {
+  color: #a52b2b;
+}
+
+.revenue-overview-footer strong svg {
+  font-size: 8px;
+}
+
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.revenue-overview-empty {
+  padding: 45px 20px;
+  text-align: center;
+}
+
+.revenue-overview-empty-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 12px;
+  border-radius: 13px;
+  background: #111111;
+  color: #d4af37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.revenue-overview-empty h3 {
+  margin: 0;
+  color: #171717;
+  font-size: 14px;
+}
+
+.revenue-overview-empty p {
+  max-width: 370px;
+  margin: 6px auto 0;
+  color: #999999;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.revenue-overview-loading {
+  margin-top: 18px;
+}
+
+.revenue-overview-loading-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.revenue-overview-loading-summary div {
+  height: 65px;
+  border-radius: 12px;
+  background: #eeeeee;
+  animation: revenueOverviewPulse 1.4s ease-in-out infinite;
+}
+
+.revenue-overview-loading-chart {
+  height: 220px;
+  margin-top: 18px;
+  border-radius: 12px;
+  background: #eeeeee;
+  animation: revenueOverviewPulse 1.4s ease-in-out infinite;
+}
+
+@keyframes revenueOverviewPulse {
+  0% {
+    opacity: 0.45;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.45;
+  }
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 850px) {
+
+  .revenue-overview-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .revenue-overview-summary-card {
+    padding: 12px;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .revenue-overview {
+    padding: 17px;
+    border-radius: 15px;
+  }
+
+  .revenue-overview-header h2 {
+    font-size: 16px;
+  }
+
+  .revenue-overview-header p {
+    font-size: 10px;
+  }
+
+  .revenue-overview-header-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .revenue-overview-footer {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+}

@@ -1,0 +1,130 @@
+.accounting-page {
+  min-height: 100vh;
+}
+
+.accounting-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accounting-title {
+  margin: 0;
+}
+
+.accounting-subtitle {
+  margin-top: 6px;
+}
+
+.accounting-section {
+  margin-top: 30px;
+}
+
+.accounting-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.accounting-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.accounting-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+}
+
+.accounting-card-label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.accounting-card-value {
+  font-size: 24px;
+}
+
+.accounting-outstanding-card {
+  display: flex;
+  gap: 60px;
+  padding: 24px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+}
+
+.accounting-large-value {
+  display: block;
+  font-size: 28px;
+  margin-top: 8px;
+}
+
+.accounting-profit-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+}
+
+.accounting-profit-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.accounting-profit-total {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.accounting-table-container {
+  overflow-x: auto;
+}
+
+.accounting-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.accounting-table th,
+.accounting-table td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.accounting-empty {
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.accounting-error {
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}
+
+.accounting-button,
+.accounting-refresh-button {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.accounting-loading {
+  padding: 40px;
+  text-align: center;
+}
+
+.accounting-period {
+  font-size: 14px;
+}
