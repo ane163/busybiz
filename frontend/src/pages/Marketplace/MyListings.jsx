@@ -28,7 +28,7 @@ function MyListings() {
   // API BASE URL
   // =====================================================
 
-  const API_BASE_URL = "http://localhost:5000/api";
+  const API_BASE_URL = "https://busybiz-5.onrender.com/api";
 
   // =====================================================
   // GET AUTH TOKEN
@@ -144,7 +144,7 @@ function MyListings() {
       return image;
     }
 
-    return `http://localhost:5000${image}`;
+    return `https://busybiz-5.onrender.com${image}`;
   };
 
   // =====================================================
