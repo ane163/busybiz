@@ -22,7 +22,7 @@ const BillingHistory = () => {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/payments",
+        "https://busybiz-5.onrender.com/api/payments",
         {
           method: "GET",
           headers: {
