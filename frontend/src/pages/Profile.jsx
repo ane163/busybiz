@@ -74,7 +74,7 @@ const Profile = () => {
 
       const response =
         await fetch(
-          "http://localhost:5000/api/users/profile",
+          "https://busybiz-5.onrender.com/api/users/profile",
           {
 
             headers: {
@@ -259,7 +259,7 @@ const Profile = () => {
 
         const response =
           await fetch(
-            "http://localhost:5000/api/users/profile-picture",
+            "https://busybiz-5.onrender.com/api/users/profile-picture",
             {
 
               method: "PUT",
@@ -390,7 +390,7 @@ const Profile = () => {
 
         const response =
           await fetch(
-            "http://localhost:5000/api/users/profile-picture",
+            "https://busybiz-5.onrender.com/api/users/profile-picture",
             {
 
               method: "DELETE",
@@ -509,7 +509,7 @@ const Profile = () => {
           "http"
         )
         ? user.profilePicture
-        : `http://localhost:5000${user.profilePicture}`
+        : `https://busybiz-5.onrender.com${user.profilePicture}`
       : null;
 
 
