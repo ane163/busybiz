@@ -71,7 +71,7 @@ const PricingPlans = ({
       setLoadingPlan(plan);
 
       const response = await fetch(
-        "http://localhost:5000/api/subscriptions/plan",
+        "https://busybiz-5.onrender.com/api/subscriptions/plan",
         {
           method: "PUT",
 
