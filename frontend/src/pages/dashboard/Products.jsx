@@ -84,7 +84,7 @@ function Products() {
 
               {product.image && (
                 <img
-                  src={`http://localhost:5000${product.image}`}
+                  src={`https://busybiz-5.onrender.com${product.image}`}
                   alt={product.name}
                   width="150"
                 />
