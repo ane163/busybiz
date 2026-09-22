@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import api from "../../services/api";
-import "./Accounting.css";
+import "./accounting.css";
 
 function Accounting() {
   const [summary, setSummary] = useState(null);
