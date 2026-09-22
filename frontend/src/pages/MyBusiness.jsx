@@ -57,7 +57,7 @@ function MyBusiness() {
 
       {business.image && (
         <img
-          src={`http://localhost:5000${business.image}`}
+          src={`https://busybiz-5.onrender.com${business.image}`}
           alt={business.businessName}
           width="200"
         />
