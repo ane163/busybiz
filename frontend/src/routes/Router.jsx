@@ -108,9 +108,9 @@ import MarketplaceListing from "../pages/Marketplace/MarketplaceListing";
 import MarketplaceProductDetails from "../pages/Marketplace/MarketplaceProductDetails";
 import MarketplaceSellerProfile from "../pages/Marketplace/MarketplaceSellerProfile";
 
-import CreateListing from "../pages/marketplace/CreateListing";
-import MyListings from "../pages/marketplace/MyListings";
-import EditListing from "../pages/marketplace/EditListing";
+import CreateListing from "../pages/Marketplace/CreateListing";
+import MyListings from "../pages/Marketplace/MyListings";
+import EditListing from "../pages/Marketplace/EditListing";
 
 // =====================================================
 // ROUTER
