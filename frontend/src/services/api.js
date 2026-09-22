@@ -1,9 +1,9 @@
 import axios from "axios";
 
-const API_URL = (import.meta.env.VITE_API_URL || "http://localhost:5000/api").replace(/\/$/, "");
+const API_URL = (import.meta.env.VITE_API_URL || "https://busybiz-5.onrender.com/api").replace(/\/$/, "");
 
 const api = axios.create({
-  baseURL: API_URL,
+  baseURL: "https://busybiz-5.onrender.com/api",
   headers: { Accept: "application/json" },
   timeout: 15000,
 });
