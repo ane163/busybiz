@@ -23,7 +23,7 @@ const CurrentPlan = ({
       setCancelling(true);
 
       const response = await fetch(
-        "https://busybiz-5.onrender.com//api/subscriptions/cancel",
+        "https://busybiz-5.onrender.com/api/subscriptions/cancel",
         {
           method: "PUT",
           headers: {
@@ -54,7 +54,7 @@ const CurrentPlan = ({
   const reactivateSubscription = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/subscriptions/reactivate",
+        "https://busybiz-5.onrender.com/api/subscriptions/reactivate",
         {
           method: "PUT",
           headers: {
