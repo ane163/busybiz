@@ -259,7 +259,7 @@ function EditListing() {
       return image;
     }
 
-    return `http://localhost:5000${image}`;
+    return `https://busybiz-5.onrender.com${image}`;
   };
 
   // =====================================================
